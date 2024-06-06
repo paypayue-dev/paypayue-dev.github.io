@@ -98,9 +98,7 @@ const config = {
     ({
       // Declare some <meta> tags
       metadata: [
-        {name: 'cache-control', content: 'no-cache'},
-        {name: 'expires', content: '0'},
-        {name: 'pragma', content: 'no-cache'},
+        {name: 'keywords', content: 'paypay'},
       ],
       // Replace with your project's social card
       image: 'img/logo.svg',
