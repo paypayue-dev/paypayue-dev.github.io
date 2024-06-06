@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: site,
+  url: 'https://paypayue-dev.github.io',//site
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -104,17 +104,28 @@ const config = {
         }
       },
       navbar: {
-        title: 'Guias',
         logo: {
           alt: 'Home',
           src: 'img/logo.svg',
         },
         items: [
           {
+            type: 'docSidebar',
+            sidebarId: 'docs',
+            position: 'left',
+            label: 'Guias',
+          },
+          {
             id: 'specification',
             label: 'Especificação',
             href: site + api,
             target: '_self'
+          },
+          {
+            href: 'https://www.paypay.pt/',
+            label: 'PayPay',
+            target: '_self',
+            position: 'right',
           },
           {
             type: 'localeDropdown',
