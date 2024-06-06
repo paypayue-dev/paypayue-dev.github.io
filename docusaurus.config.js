@@ -97,8 +97,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Declare some <meta> tags
-      metadata: [
-        {name: 'keywords', content: 'paypay'},
+      headTags: [
+        {
+          tagName: 'meta',
+          attributes: {
+            httpEquiv: 'Cache-Control',
+            content: 'no-store'
+          },
+        }
       ],
       // Replace with your project's social card
       image: 'img/logo.svg',
