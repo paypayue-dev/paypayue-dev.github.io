@@ -96,16 +96,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Declare some <meta> tags
-      headTags: [
-        {
-          tagName: 'meta',
-          attributes: {
-            httpEquiv: 'Cache-Control',
-            content: 'no-store'
-          },
-        }
-      ],
       // Replace with your project's social card
       image: 'img/logo.svg',
       docs: {
