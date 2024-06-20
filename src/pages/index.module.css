@@ -14,18 +14,12 @@
   background-position: center, top;
 }
 
+.hero__subtitle{
+  color: #174275;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
 }
-/* .hero__background{
-  background-image: url(https://paypay.pt/paypay/media/public/vantagens_2563_2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center, top;
-  }
-
-  .hero__subtitle{
-  color: #174275;
-  } */
