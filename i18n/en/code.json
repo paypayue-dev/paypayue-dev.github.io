@@ -269,5 +269,35 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.headerDescription": {
+    "message": "The simplest way to manage payments"
+  },
+  "homepage.guias": {
+    "message": "Guides"
+  },
+  "homepage.guiasDescription": {
+    "message": "This guide outlines the requirements and steps needed to integrate with PayPay for customers who wish to integrate our payment services directly into their applications."
+  },
+  "homepage.guiasButton": {
+    "message": "View Guides"
+  },
+  "homepage.api": {
+    "message": "API Specification"
+  },
+  "homepage.apiDescription": {
+    "message": "PayPay also supports integrations with your management software through our API"
+  },
+  "homepage.apiButton": {
+    "message": "View API"
+  },
+  "homepage.integracoes": {
+    "message": "Integrations"
+  },
+  "homepage.integracoesDescription": {
+    "message": "PayPay offers several free integrations and plugins that allow you to combine payment services, via Multibanco, Credit/Debit Card and MB WAY, with e-commerce stores and invoicing software."
+  },
+  "homepage.integracoesButton": {
+    "message": "View Integrations"
   }
 }

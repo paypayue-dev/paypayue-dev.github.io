@@ -63,7 +63,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           path: './docs',
           sidebarPath: './sidebars.js',
         },
@@ -111,7 +111,7 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'docs',
+            sidebarId: 'guides',
             position: 'left',
             label: 'Guias',
           },
@@ -120,6 +120,12 @@ const config = {
             label: 'Especificação',
             href: site + api,
             target: '_self'
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'integrations',
+            position: 'left',
+            label: 'Integrações',
           },
           {
             href: 'https://www.paypay.pt/',

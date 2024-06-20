@@ -269,5 +269,35 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "homepage.headerDescription": {
+    "message": "La forma más sencilla de gestionar los pagos"
+  },
+  "homepage.guias": {
+    "message": "Guías"
+  },
+  "homepage.guiasDescription": {
+    "message": "Esta guía describe los requisitos y pasos necesarios para la integración con PayPay para los clientes que desean integrar nuestros servicios de pago directamente en sus aplicaciones."
+  },
+  "homepage.guiasButton": {
+    "message": "Consultar Guías"
+  },
+  "homepage.api": {
+    "message": "Especificación API"
+  },
+  "homepage.apiDescription": {
+    "message": "PayPay también admite integraciones con su software de gestión a través de nuestra API"
+  },
+  "homepage.apiButton": {
+    "message": "Consulta API"
+  },
+  "homepage.integracoes": {
+    "message": "Integraciones"
+  },
+  "homepage.integracoesDescription": {
+    "message": "PayPay ofrece varias integraciones y plugins gratuitos que le permiten combinar servicios de pago, a través de Multibanco, Tarjeta de crédito/débito y MB WAY, con tiendas de comercio electrónico y software de facturación."
+  },
+  "homepage.integracoesButton": {
+    "message": "Consultar Integraciones"
   }
 }
