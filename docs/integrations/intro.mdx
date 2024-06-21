@@ -1,0 +1,92 @@
+---
+sidebar_position: 1
+---
+
+# Lista de Integrações
+
+import React, { useEffect } from "react";
+
+export const integrationsList = [
+    {
+        title: 'WooCommerce',
+        logoSrc: '../../img/woocommerce.png',
+        linkHref: 'https://wordpress.org/plugins/paypay-pagamentos-multibanco-e-cartao-de-creditodebito/',
+        linkText: 'Disponível na loja'
+    },
+    {
+        title: 'PrestaShop',
+        logoSrc: '../../img/prestashop.png',
+        linkHref: 'https://paypay.pt/paypay/public/plugins/prestashop-plugins.zip',
+        linkText: 'Descarregar extensão'
+    },
+    {
+        title: 'OpenCart',
+        logoSrc: '../../img/opencart.png',
+        linkHref: 'https://www.opencart.com/index.php?route=extension/extension/info&extension_id=27224',
+        linkText: 'Disponível na loja'
+    },
+    {
+        title: 'zencart',
+        logoSrc: '../../img/zencart.png',
+        linkHref: 'https://www.zen-cart.com/downloads.php?do=file&id=2094',
+        linkText: 'Disponível na loja'
+    },
+    {
+        title: 'VirtueMart',
+        logoSrc: '../../img/virtuemart.png',
+        linkHref: 'https://extensions.joomla.org/extension/extension-specific/virtuemart-extensions/paypay/',
+        linkText: 'Disponível na loja'
+    },
+    {
+        title: 'oscommerce',
+        logoSrc: '../../img/os_commerce.png',
+        linkHref: 'https://apps.oscommerce.com/Apps&JHMvS&paypay-oscommerce',
+        linkText: 'Disponível na loja'
+    },
+    {
+        title: 'iGest',
+        logoSrc: '../../img/igest.png',
+        linkHref: 'https://www.igest.pt/',
+        linkText: 'Visitar Website'
+    },
+    {
+        title: 'invoicexpress',
+        logoSrc: '../../img/invoice_express.png',
+        linkHref: 'https://invoicexpress.com/receber-pagamentos',
+        linkText: 'Visitar website'
+    },
+    {
+        title: 'api',
+        logoSrc: '../../img/API.png',
+        linkHref: 'https://paypay.pt/paypay/public/api/',
+        linkText: 'Visitar website'
+    }
+]
+
+export const ListaIntegracoes = () => {
+    useEffect(() => {
+        document.getElementsByClassName('collapseSidebarButton_node_modules-@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-CollapseButton-styles-module')[0].click()
+        document.querySelector('aside').style.display='none'
+    })
+
+    return (
+        <div className="container-fluid">
+            <div className="row">
+                {integrationsList.map(({title, logoSrc, linkHref, linkText}, idx) => (
+                    <div className="col col--4" key={idx}>
+                        <a href={linkHref} target="_blank" className="zona-integracoes__panel" title={title}>
+                            <div className="zona-integracoes__heading">
+                                <div className="zona-integracoes__logo-box">
+                                    <img src={logoSrc} />
+                                </div>
+                            </div>
+                            <div className="zona-integracoes__footer">{linkText}</div>
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+<ListaIntegracoes />
