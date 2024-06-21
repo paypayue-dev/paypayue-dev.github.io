@@ -141,3 +141,82 @@ a.navbar__item.navbar__link:not(#specification):last-of-type{
 html:not(.docs-wrapper) #slideout {
   display: none;
 }
+
+.zona-integracoes__panel {
+  display: block;
+  height: 206.14px;
+  color: unset!important;
+  box-shadow: 0px 0px 3px 0 #c1c1c1;
+  border-radius: 6px;
+  border: none;
+  background-color: inherit;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.zona-integracoes__panel:not(.zona-integracoes__selectedArea):hover,
+.zona-integracoes__selectedArea{
+  cursor: pointer;
+}
+
+.zona-integracoes__panel:not(.zona-integracoes__selectedArea):hover{
+  background-color: #F5F5F5!important;
+}
+
+.zona-integracoes__panel:not(:has(.zona-integracoes__footer)) .zona-integracoes__heading,
+.zona-integracoes__panel:not(:has(.zona-integracoes__footer)) .zona-integracoes__body{
+  padding-top: 33px;
+}
+
+.zona-integracoes__heading {
+  padding: 56px 15px 56px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.zona-integracoes__logo-box{
+  height: 63px;
+}
+
+.zona-integracoes__logo-box img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.zona-integracoes__botaoPaypay{
+  padding-top: 13px;
+}
+
+.zona-integracoes__body{
+  padding: 20px 15px;
+  height: 95px;
+}
+
+.zona-integracoes__titulo {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.zona-integracoes__descricao {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.zona-integracoes__footer {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 15px;
+}
+
+.zona-integracoes__footer--active {
+  background-color: #DFEFE6;
+  color: #30995D;
+}
