@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # Introdução
 
-:::info
-A API SOAP está descontinuada, a documentação continua disponível [aqui](../soap/).
-:::
-
 Este guia descreve os requisitos e passos necessários para a integração com a PayPay para os clientes que pretendam integrar os nossos serviços de pagamento diretamente nas suas aplicações.
 
 São disponibilizados métodos para:

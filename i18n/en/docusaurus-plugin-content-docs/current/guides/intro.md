@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # Introduction
 
-:::info
-The SOAP API is discontinued, documentation is still available [here](../../soap/ ":ignore").
-:::
-
 This guide describes the requirements and steps necessary to integrate with PayPay for customers who want to integrate our payment services directly into their applications.
 
 Methods are available for:
