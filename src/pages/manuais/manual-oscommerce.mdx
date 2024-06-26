@@ -1,0 +1,100 @@
+# osCommerce
+
+## [Download](https://apps.oscommerce.com/Apps&JHMvS&paypay-oscommerce)
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+    <TabItem value="Requisitos" label="Requisitos" default>
+        - PHP 5.4
+        - osCommerce 2.3.2
+        - [SOAP extension](http://php.net/manual/en/book.soap.php)
+
+        Após a instalação concluída e a loja configurada, aceda à área de administração e efetue o
+        seu login.
+
+        ![requisitos1](../../../_media/oscommerce-1.png)
+    </TabItem>
+    <TabItem value="Instalação" label="Instalação">
+        Realize o download do módulo osCommerce da PayPay disponível em https://paypay.pt/paypay/#integracoes. De seguida deve extrair os ficheiros do zip e copiar os ficheiros fornecidos para a pasta "catalog" que contém os ficheiros de instalação da sua loja osCommerce, como ilustra a figura seguinte.
+
+        ![instalacao1](../../../_media/oscommerce-2.png)
+
+        Após todos os ficheiros terem sido copiados com sucesso, aceda à sua área de administração no menu dos módulos de pagamento. Clique em "Install module" para visualizar os módulos a instalar, entre eles deve constar os seguintes módulos da PayPay:
+        - PayPay - Core Module (obrigatório);
+        - PayPay - Credit/DebitCard;
+        - PayPay - Multibanco;
+        - PayPay - MB WAY
+
+        ![instalacao2](../../../_media/oscommerce-3.png)
+
+        Selecione o módulo PayPay - Core Module e clique em "Install Module". Este módulo é obrigatório, para os restantes pode selecionar e instalar os que pretende utilizar.
+
+        ![instalacao3](../../../_media/oscommerce-4.png)
+
+        É recomendada a utilização o ambiente de testes antes do avanço para ambiente de produção. Caso assim o pretenda pode introduzir os seguintes dados de acesso:
+
+        <table>
+            <tr>
+                <td>NIF de cliente</td>
+                <td>503129445</td>
+            </tr>
+            <tr>
+                <td>Código de Plataforma:</td>
+                <td>0042</td>
+            </tr>
+            <tr>
+                <td>Chave de encriptação:</td>
+                <td>ZyQqo8snqWRTY5bAe6ZmfPhr</td>
+            </tr>
+        </table>
+
+        ![instalacao4](../../../_media/oscommerce-5.png)
+
+        De modo a obter os dados de acesso de produção deve aceder à sua área de cliente da PayPay.
+
+        ![instalacao5](../../../_media/oscommerce-6.png)
+
+        Após os dados estarem preenchidos e guardados, pode visualizá-los como na imagem seguinte.
+
+        ![instalacao6](../../../_media/oscommerce-7.png)
+
+        <div class="theme-admonition theme-admonition-info admonition_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module alert alert--warning">
+            <div class="admonitionHeading_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module"><span class="admonitionIcon_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div>
+            <div class="admonitionContent_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module">
+                <p>Deve sempre clicar no link "Ativar integração PayPay" para confirmar que a configuração está correta e ativar a comunicação automática de pagamentos entre a PayPay e a sua loja. </p>
+            </div>
+        </div>
+    </TabItem>
+    <TabItem value="Realizar o Pagamento da Compra" label="Realizar o Pagamento da Compra">
+        Neste momento, se aceder à sua loja já poderá visualizar as formas de pagamento durante o checkout de uma encomenda.
+
+        ![pagamento1](../../../_media/oscommerce-8.png)
+
+        No próximo passo pode conferir a informação do pagamento onde deve constar a forma de pagamento selecionada.
+
+        ![pagamento2](../../../_media/oscommerce-9.png)
+
+        Ao confirmar a encomenda, será redirecionado para a página da PayPay onde poderá concluir o seu pagamento em segurança.
+
+        <div class="theme-admonition theme-admonition-info admonition_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module alert alert--info">
+            <div class="admonitionHeading_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module"><span class="admonitionIcon_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div>
+            <div class="admonitionContent_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module">
+                <p>Os dados de pagamento também são enviados por e-mail para o cliente. A configuração de envio de e-mails deverá estar corretamente configurada na loja.</p>
+            </div>
+        </div>
+
+        ![pagamento3](../../../_media/oscommerce-10.png)
+
+        Após a realização do pagamento com sucesso o cliente é redirecionado de volta para a página de confirmação da encomenda.
+
+        ![pagamento4](../../../_media/oscommerce-11.png)
+
+        Na lista de encomendas da conta de cliente pode consultar em detalhe a atualização dos estados da encomenda.
+
+        ![pagamento5](../../../_media/oscommerce-12.png)
+
+        Este é o processo que deve seguir para verificar que a integração está a funcionar na perfeição.
+    </TabItem>
+</Tabs>

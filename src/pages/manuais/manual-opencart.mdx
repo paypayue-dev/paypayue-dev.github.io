@@ -1,0 +1,127 @@
+# opencart
+
+## [Download](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=27224)
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+    <TabItem value="Requisitos" label="Requisitos" default>
+        Para executar a integração com a PayPay:
+        - O comerciante deve estar registado na plataforma PayPay;
+        - Instalar o OpenCart no seu computador, em www.opencart.com;
+        - Deve descarregar os ficheiros relativos ao plugin para OpenCart da página https://www.paypay.pt;
+        - Configurar a informação, com a moeda ‘Euro’ e o país ‘Portugal’ (your-storeurl/admin/index.php) e em Settings > Edit your store > Local;
+
+        ![requisitos1](../../../_media/opencart-1.png)
+
+        - Aceder à loja (your-store-url/index.php). Deverá surgir a seguinte prévisualização:
+
+        ![requisitos2](../../../_media/opencart-2.png)
+    </TabItem>
+    <TabItem value="Passos de Configuração" label="Passos de Configuração">
+        Copie os ficheiros descarregados da página https://www.paypay.pt para a sua pasta de instalação do OpenCart:
+
+        ![configuracao1](../../../_media/opencart-3.png)
+
+        No ‘Dashboard’ de administração da sua loja de e-commerce, aceda ao separador de instalação extensões em ‘Extensions’ > ‘Extensions’.
+
+        ![configuracao2](../../../_media/opencart-4.png)
+
+        Instale a extensão:
+
+        ![configuracao3](../../../_media/opencart-5.png)
+
+        Clique na opção editar:
+
+        ![configuracao4](../../../_media/opencart-6.png)
+
+        Insira as credenciais fornecidas pelo seu gestor de conta da PayPay.
+        Caso as credenciais não estejam corretas, será apresentada uma mensagem de erro e não será possível salvar as definições. Depois de inserir os dados corretos, clique em guardar.
+
+        ![configuracao5](../../../_media/opencart-7.png)
+    </TabItem>
+    <TabItem value="Realizar o pagamento da encomenda" label="Realizar o pagamento da encomenda">
+        Para verificar se a configuração da PayPay foi bem-sucedida, aceda à página da sua loja e adicione ao carrinho (‘ShoppingCart’) algum produto/serviço. Clique em ‘Checkout’ para prosseguir com o pagamento.
+
+        ![pagamento1](../../../_media/opencart-8.png)
+
+        Para concluir a compra, no ‘Checkout’, será solicitado o login/registo. Caso já tenha uma conta, efetue o login, caso contrário realize um novo registo, de uma conta à sua escolha.
+
+        ![pagamento2](../../../_media/opencart-9.png)
+
+        Continue na página do ‘Checkout’. Insira os detalhes de entrega e, no passo Método de Pagamento (‘Payment Method’), selecione o método de pagamento PayPay. Clique depois em continuar.
+
+        ![pagamento3](../../../_media/opencart-10.png)
+
+        Para confirmar a encomenda, clique em ‘Confirm Order’ e confirme os detalhes do seu pedido. Deverá escolher se pretende efetuar o pagamento por cartão de crédito, ‘Credit Card’, Multibanco (ATM), ou MB WAY. A opção de cartão de Crédito/Débito fica selecionada por defeito, clique apenas em confirmar o pedido: ‘Confirm Order’.
+
+        ![pagamento4](../../../_media/opencart-11.png)
+
+        <h2>Cartão de crédito/débito</h2>
+        Após clicar no botão de confirmar o pedido ‘Confirm Order’, será redirecionado para a plataforma da PayPay para realizar o seu pagamento. Aparecerá um cartão como o que se encontra na imagem e será pedida a informação do seu cartão de Crédito/Débito (Número do cartão, Data de validade, Nome do titular do Cartão e Código de Segurança).
+
+        ![cc1](../../../_media/opencart-12.png)
+
+        Depois de clicar no botão ‘Pague agora’ e caso o pagamento seja bem-sucedido, aparecerá a informação de pagamento associado com a compra e poderá fazer o download do comprovativo de pagamento e clicar no botão ‘Voltar’ ao site de compras.
+
+        ![cc2](../../../_media/opencart-13.png)
+
+        No site de compras aparecerá toda a informação da compra, detalhes da morada de envio, o tipo de pagamento e o montante associado à compra. Na tabela do histórico de compras poderá ver que o pedido já se encontra em processo “Processing”
+
+        ![cc3](../../../_media/opencart-14.png)
+
+        <h2>Multibanco</h2>
+        Após clicar no botão de confirmar o pedido ‘Confirm Order’, será redirecionado para a plataforma da PayPay para realizar o seu pagamento. Ao escolher o método de pagamento por multibanco, irá aparecer a entidade, referência e o montante. Poderá ‘Exportar’ a informação para poder proceder ao pagamento.
+
+        ![mb1](../../../_media/opencart-15.png)
+
+        No site de compras aparecerá toda a informação da compra, detalhes da morada de envio, o tipo de pagamento e o montante associado à compra. Na tabela do histórico de compras poderá ver que o pedido já se encontra em processo “Processing” até efetuar o pagamento.
+
+        ![mb2](../../../_media/opencart-16.png)
+
+        <h2>MB WAY</h2>
+        Após clicar no botão de confirmar o pedido ‘Confirm Order’, será redirecionado para a plataforma da PayPay para realizar o seu pagamento. Aparecerá a ‘Informação de pagamento’ e será pedido o seu número de telemóvel. Após colocar o número só terá de clicar em ‘Seguinte’.
+
+        ![mbw1](../../../_media/opencart-17.png)
+
+        Depois de efetuar o pagamento e caso o mesmo seja bem-sucedido, aparecerá a informação de pagamento associado com a compra e poderá fazer o download do comprovativo de pagamento, assim como, clicar no botão ‘Voltar’ ao site de compras.
+
+        ![mbw2](../../../_media/opencart-18.png)
+
+        No site de compras aparecerá toda a informação da mesma, detalhes da morada de envio, o tipo de pagamento e o montante associado à compra. Na tabela do histórico de compras poderá ver que o pedido já se encontra em processo “Processing”.
+
+        ![mbw3](../../../_media/opencart-19.png)
+    </TabItem>
+    <TabItem value="Cancelamento da encomenda" label="Cancelamento da encomenda">
+        Qualquer tipo/método de pagamento poderá ser cancelado. Basta clicar no botão ‘Cancelar’.
+
+        ![cancelamento1](../../../_media/opencart-20.png)
+
+        Se cancelar o pagamento, no histórico da compra poderá verificar que o pagamento foi cancelado (‘Canceled’).
+
+        ![cancelamento2](../../../_media/opencart-21.png)
+
+        A informação do seu pedido ficará disponível na área privada, com a referência de pagamento, entidade e numerário. Os dados de pagamento também serão enviados por e-mail.Após o pagamento, o estado da encomenda será devidamente atualizado no histórico do seu pedido.
+
+        ![cancelamento3](../../../_media/opencart-22.png)
+
+        Exemplo de e-mail com os dados de pagamento:
+
+        ![cancelamento3](../../../_media/opencart-23.png)
+
+        <div class="theme-admonition theme-admonition-info admonition_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module alert alert--info">
+            <div class="admonitionHeading_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module"><span class="admonitionIcon_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div>
+            <div class="admonitionContent_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module">
+                <p>A sua loja agora está apta para gerar e fornecer os dados de pagamento aos seus clientes, em tempo real, de acordo com o método de pagamento escolhido (por Cartão de Crédito/Débito, Multibanco ou MB WAY).<br/><br/>
+                Os dados de pagamento são enviados por e-mail aos seus clientes e a identificação do pagamento da PayPay pode ser consultada no histórico da compra. Quando o pagamento for efetuado, recebe no seu e-mail a confirmação, enviada pela PayPay.<br/><br/>
+                Caso surja alguma dúvida, não hesite em nos contactar.</p>
+            </div>
+        </div>
+    </TabItem>
+    <TabItem value="Atualizar os pagamentos manualmente" label="Atualizar os pagamentos manualmente">
+        Todos os pagamentos são processados automaticamente. No entanto, caso verifique alguma situação em que o pagamento foi efetuado, mas não foi atualizado na loja OpenCart, o administrador da loja poderá utilizar o botão ‘Verify Payments’ para atualizar manualmente todos os pagamentos pendentes. Este botão está disponível no separador de módulos de pagamentos ‘Payments’ do ‘Dashboard’.<br/> Altere também o ‘Status’ de pagamento.
+
+        ![manualmente1](../../../_media/opencart-24.png)
+    </TabItem>
+</Tabs>
