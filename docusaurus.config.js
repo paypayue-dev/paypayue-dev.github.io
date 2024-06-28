@@ -15,16 +15,16 @@ const config = {
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: 'https://paypayue-dev.github.io',//site
+  url: 'http://10.11.16.37/',//site 'https://paypayue-dev.github.io'
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/cristiano/paypay/public/api/',// '/'
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'paypayue', // Usually your GitHub org/user name.
-  projectName: process.env.PROJECT_NAME, // Usually your repo name.
-  deploymentBranch: 'deployment',
+  // organizationName: 'paypayue', // Usually your GitHub org/user name.
+  // projectName: process.env.PROJECT_NAME, // Usually your repo name.
+  // deploymentBranch: 'deployment',
   trailingSlash: false,
 
   onBrokenLinks: 'ignore',
@@ -122,10 +122,8 @@ const config = {
             target: '_self'
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'integrations',
-            position: 'left',
             label: 'Integrações',
+            to: 'integrations'
           },
           {
             href: 'https://www.paypay.pt/',
