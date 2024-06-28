@@ -11,20 +11,20 @@ const api = '/api'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PayPay - Api documentation',
+  title: 'PayPay - API documentation',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: site,
+  url: 'http://10.11.16.37/',//site 'https://paypayue-dev.github.io'
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/cristiano/paypay/public/api/',// '/'
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'paypayue', // Usually your GitHub org/user name.
-  projectName: process.env.PROJECT_NAME, // Usually your repo name.
-  deploymentBranch: 'deployment',
+  // organizationName: 'paypayue', // Usually your GitHub org/user name.
+  // projectName: process.env.PROJECT_NAME, // Usually your repo name.
+  // deploymentBranch: 'deployment',
   trailingSlash: false,
 
   onBrokenLinks: 'ignore',
@@ -63,7 +63,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           path: './docs',
           sidebarPath: './sidebars.js',
         },
@@ -104,17 +104,32 @@ const config = {
         }
       },
       navbar: {
-        title: 'Guias',
         logo: {
           alt: 'Home',
           src: 'img/logo.svg',
         },
         items: [
           {
+            type: 'docSidebar',
+            sidebarId: 'guides',
+            position: 'left',
+            label: 'Guias',
+          },
+          {
             id: 'specification',
             label: 'Especificação',
             href: site + api,
             target: '_self'
+          },
+          {
+            label: 'Integrações',
+            to: 'integrations'
+          },
+          {
+            href: 'https://www.paypay.pt/',
+            label: 'PayPay',
+            target: '_self',
+            position: 'right',
           },
           {
             type: 'localeDropdown',
