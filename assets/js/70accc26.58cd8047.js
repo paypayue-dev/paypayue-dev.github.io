@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[5148],{9778:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"ZenCart","slug":"/category/zencart","permalink":"/docs/category/zencart","sidebar":"zencart","navigation":{"next":{"title":"Requisitos","permalink":"/docs/manual-zencart/zencart/intro"}}}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[2951],{4192:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"OpenCart","slug":"/category/opencart","permalink":"/es/docs/category/opencart","sidebar":"opencart","navigation":{"next":{"title":"Requisitos","permalink":"/es/docs/manual-opencart/opencart/intro"}}}}')}}]);
