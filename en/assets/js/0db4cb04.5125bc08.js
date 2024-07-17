@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[986],{4143:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"PrestaShop","slug":"/category/prestashop","permalink":"/en/docs/category/prestashop","sidebar":"prestashop","navigation":{"next":{"title":"Requirements","permalink":"/en/docs/manual-prestashop/prestashop/intro"}}}}')}}]);

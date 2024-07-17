@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[3179],{4850:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"WooCommerce","slug":"/category/woocommerce","permalink":"/en/docs/category/woocommerce","sidebar":"woocommerce","navigation":{"next":{"title":"Requirements","permalink":"/en/docs/manual-woocommerce/woocommerce/intro"}}}}')}}]);
