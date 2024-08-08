@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[1144],{8103:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"VirtueMart","slug":"/category/virtuemart","permalink":"/en/docs/category/virtuemart","sidebar":"virtuemart","navigation":{"next":{"title":"Requirements","permalink":"/en/docs/manual-virtuemart/virtuemart/intro"}}}}')}}]);
