@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.1">
 <title data-rh="true">Enviar pedido de pagamento | PayPay - API documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://paypayue-dev.github.io/en/img/logo.svg"><meta data-rh="true" name="twitter:image" content="https://paypayue-dev.github.io/en/img/logo.svg"><meta data-rh="true" property="og:url" content="https://paypayue-dev.github.io/en/docs/guides/terminals/cloud/send-payment"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="pt"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Enviar pedido de pagamento | PayPay - API documentation"><meta data-rh="true" name="description" content="Enviar pedido de pagamento para um terminal Cloud"><meta data-rh="true" property="og:description" content="Enviar pedido de pagamento para um terminal Cloud"><link data-rh="true" rel="icon" href="/en/img/favicon.png"><link data-rh="true" rel="canonical" href="https://paypayue-dev.github.io/en/docs/guides/terminals/cloud/send-payment"><link data-rh="true" rel="alternate" href="https://paypayue-dev.github.io/docs/guides/terminals/cloud/send-payment" hreflang="pt"><link data-rh="true" rel="alternate" href="https://paypayue-dev.github.io/es/docs/guides/terminals/cloud/send-payment" hreflang="es"><link data-rh="true" rel="alternate" href="https://paypayue-dev.github.io/en/docs/guides/terminals/cloud/send-payment" hreflang="en"><link data-rh="true" rel="alternate" href="https://paypayue-dev.github.io/docs/guides/terminals/cloud/send-payment" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Terminais","item":"https://paypayue-dev.github.io/en/docs/category/terminais"},{"@type":"ListItem","position":2,"name":"Cloud","item":"https://paypayue-dev.github.io/en/docs/category/cloud"},{"@type":"ListItem","position":3,"name":"Enviar pedido de pagamento","item":"https://paypayue-dev.github.io/en/docs/guides/terminals/cloud/send-payment"}]}</script><link rel="stylesheet" href="/en/assets/css/styles.43a5af78.css">
-<script src="/en/assets/js/runtime~main.03cbe8d5.js" defer="defer"></script>
-<script src="/en/assets/js/main.dd5332c9.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.b84fd205.js" defer="defer"></script>
+<script src="/en/assets/js/main.4e436842.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -17,9 +17,8 @@
 <button class="btn-api btn-api--float-right"><span>Consultar API    <!-- -->&gt;</span></button>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-iniciação-do-pagamento-via-api">1. Iniciação do Pagamento (via API)<a href="#1-iniciação-do-pagamento-via-api" class="hash-link" aria-label="Direct link to 1. Iniciação do Pagamento (via API)" title="Direct link to 1. Iniciação do Pagamento (via API)" translate="no">​</a></h3>
 <p>O seu sistema inicia o pagamento remotamente através da API PayPay:</p>
-<p><strong>Fluxo:</strong></p>
 <ol>
-<li>Sistema envia pedido para API PayPay:</li>
+<li>O sistema envia o pedido para API PayPay:</li>
 </ol>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="endpoint">Endpoint<a href="#endpoint" class="hash-link" aria-label="Direct link to Endpoint" title="Direct link to Endpoint" translate="no">​</a></h5>
 <div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">POST /terminals/{uuid}/payments</span><br></span></code></pre></div></div>
@@ -28,8 +27,8 @@
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="parâmetros">Parâmetros<a href="#parâmetros" class="hash-link" aria-label="Direct link to Parâmetros" title="Direct link to Parâmetros" translate="no">​</a></h5>
 <table><thead><tr><th>Parâmetro</th><th>Tipo</th><th>Obrigatório</th><th>Descrição</th></tr></thead><tbody><tr><td><code>uuid</code></td><td>string</td><td>✅ Sim</td><td>UUID do terminal para o qual irá ser enviado o pedido de pagamento</td></tr><tr><td><code>amount</code></td><td>integer</td><td>✅ Sim</td><td>Montante</td></tr><tr><td><code>code</code></td><td>string</td><td>❌ Não</td><td>Código indicado pelo comerciante, por exemplo, código da encomenda do sistema</td></tr><tr><td><code>summary</code></td><td>string</td><td>❌ Não</td><td>Descrição indicado pelo comerciante, por exemplo, descrição da encomenda do sistema</td></tr></tbody></table>
 <ol start="2">
-<li>API PayPay comunica com o terminal de forma <strong>assíncrona</strong></li>
-<li>Terminal recebe e apresenta o valor automaticamente ao operador</li>
+<li>API PayPay comunica com o terminal de forma <strong>assíncrona</strong>;</li>
+<li>Terminal recebe e apresenta o valor automaticamente ao operador;</li>
 </ol>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Tempo de espera</div><div class="admonitionContent_BuS1"><p>O terminal aguarda <strong>1 minuto</strong> pela apresentação do cartão.</p></div></div>
 <ol start="4">
