@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Iniciación | PayPay - API documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://paypayue-dev.github.io/es/img/logo.svg"><meta data-rh="true" name="twitter:image" content="https://paypayue-dev.github.io/es/img/logo.svg"><meta data-rh="true" property="og:url" content="https://paypayue-dev.github.io/es/docs/guides/terminals/cloud"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="pt"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Iniciación | PayPay - API documentation"><link data-rh="true" rel="icon" href="/es/img/favicon.png"><link data-rh="true" rel="canonical" href="https://paypayue-dev.github.io/es/docs/guides/terminals/cloud"><link data-rh="true" rel="alternate" href="https://paypayue-dev.github.io/docs/guides/terminals/cloud" hreflang="pt"><link data-rh="true" rel="alternate" href="https://paypayue-dev.github.io/es/docs/guides/terminals/cloud" hreflang="es"><link data-rh="true" rel="alternate" href="https://paypayue-dev.github.io/en/docs/guides/terminals/cloud" hreflang="en"><link data-rh="true" rel="alternate" href="https://paypayue-dev.github.io/docs/guides/terminals/cloud" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Terminales","item":"https://paypayue-dev.github.io/es/docs/category/terminais"},{"@type":"ListItem","position":2,"name":"Cloud","item":"https://paypayue-dev.github.io/es/docs/category/cloud"},{"@type":"ListItem","position":3,"name":"Iniciación","item":"https://paypayue-dev.github.io/es/docs/guides/terminals/cloud/"}]}</script><link rel="stylesheet" href="/es/assets/css/styles.67bc7db7.css">
-<script src="/es/assets/js/runtime~main.6d30df1c.js" defer="defer"></script>
-<script src="/es/assets/js/main.8b889cc8.js" defer="defer"></script>
+<script src="/es/assets/js/runtime~main.77a25fc4.js" defer="defer"></script>
+<script src="/es/assets/js/main.0791bb31.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -15,18 +15,18 @@
 <p>Terminal Cloud es una solución avanzada que permite la integración completa entre el terminal de pago y el sistema del cliente a través de API REST, lo que permite la automatización y el control remoto de las transacciones.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arquitetura-da-integração">Arquitectura de la Integración<a href="#arquitetura-da-integração" class="hash-link" aria-label="Enlace directo a arquitetura-da-integração" title="Enlace directo a arquitetura-da-integração" translate="no">​</a></h2>
 <pre>┌─────────────────┐      API REST       ┌──────────────────┐
-│  <!-- -->Su Sistema<!-- -->    │ ←─────────────────→ │   <!-- -->API PayPay<!-- -->     │
+│  <!-- -->Su Sistema<!-- -->     │ ←─────────────────→ │   <!-- -->API PayPay<!-- -->     │
 │  (POS/ERP)      │                     │                  │
 └─────────────────┘                     └──────────────────┘
       ↑                                        ↓
       │                                   ┌────────────┐
       │          Webhook                  │  <!-- -->Terminal<!-- -->  │
       └───────────────────────────────────┤   Cloud    │
-               (<!-- -->notificación<!-- -->)              └────────────┘
+               (<!-- -->notificación<!-- -->)             └────────────┘
                                                  ↕
                                           ┌──────────────┐
-                                          │    <!-- -->Red de<!-- -->   │
-                                          │  <!-- -->Pagos<!-- -->  │
+                                          │    <!-- -->Red de<!-- -->    │
+                                          │  <!-- -->Pagos<!-- -->       │
                                           └──────────────┘</pre>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resolução-de-problemas-comuns">Resolución de Problemas Comunes<a href="#resolução-de-problemas-comuns" class="hash-link" aria-label="Enlace directo a resolução-de-problemas-comuns" title="Enlace directo a resolução-de-problemas-comuns" translate="no">​</a></h2>
 <table><thead><tr><th>Problema</th><th>Causa Probable</th><th>Solución</th></tr></thead><tbody><tr><td>El terminal no responde</td><td>Terminal sin conexión o UUID incorrecto</td><td>Verificar conexión y UUID del terminal</td></tr><tr><td>Webhook no recibido</td><td>Endpoint no configurado o inaccesible</td><td>Verificar URL y firewall</td></tr><tr><td>Transacción rechazada</td><td>Verificar fondos, validez de la tarjeta o ponerse en contacto con el banco emisor</td><td></td></tr><tr><td>El terminal no responde</td><td>Comprobar la conexión a Internet y reiniciar el terminal</td><td></td></tr><tr><td>Error de impresión</td><td>Verificar papel y ajustes de impresión</td><td></td></tr><tr><td>PIN incorrecto</td><td>El cliente puede volver a intentarlo (máximo 3 intentos)</td><td></td></tr></tbody></table>
